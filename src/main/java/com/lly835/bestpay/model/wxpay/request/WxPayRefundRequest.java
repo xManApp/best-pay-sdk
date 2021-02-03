@@ -51,4 +51,7 @@ public class WxPayRefundRequest {
 
     @Element(name = "refund_account", required = false)
     private String refundAccount;
+
+    @Element(name = "notify_url", required = false)
+    private String notifyUrl;
 }

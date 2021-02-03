@@ -22,6 +22,7 @@ public class AliPayConfig extends PayConfig {
      */
     private String aliPayPublicKey;
 
+    @Override
     public void check() {
         Objects.requireNonNull(appId, "config param 'appId' is null.");
         Objects.requireNonNull(privateKey, "config param 'privateKey' is null.");

@@ -197,6 +197,7 @@ public class WxPayServiceImpl extends BestPayServiceImpl {
 
         wxRequest.setSign(WxPaySignature.sign(MapUtil.buildMap(wxRequest), wxPayConfig.getMchKey()));
 
+
         //初始化证书
         if (wxPayConfig.getSslContext() == null) {
             wxPayConfig.initSSLContext();
